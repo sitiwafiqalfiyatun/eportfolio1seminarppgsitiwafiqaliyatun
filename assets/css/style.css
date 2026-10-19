@@ -1413,74 +1413,242 @@ body:not(.mode-presentation) .slide-section {
 /* ==========================================================================
    13. KONTAK SECTION
    ========================================================================== */
+/* ==========================================================================
+   13. KONTAK SECTION (E-PORTFOLIO 1 COMPATIBLE & ENHANCED)
+   ========================================================================== */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  align-items: center;
+  gap: 2rem;
+  align-items: stretch;
+  margin-top: 1.25rem;
 }
 
-.contact-info-card {
+.contact-identity-card {
   background: var(--bg-white);
   border: 1px solid var(--border-light);
-  border-radius: 28px;
-  padding: 2.2rem;
-  box-shadow: var(--shadow-md);
-}
-
-.contact-name-title {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary-deep);
-  margin-bottom: 0.4rem;
-}
-
-.contact-meta-desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
-.social-links-list {
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-}
-
-.social-btn-row {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 1.4rem;
-  border-radius: 16px;
-  background: var(--bg-blush);
-  border: 1px solid var(--border-light);
-  color: var(--text-dark);
-  text-decoration: none;
-  font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 700;
   transition: var(--transition-smooth);
 }
-.social-btn-row:hover {
-  background: var(--primary-rose);
-  color: #fff;
-  border-color: var(--primary-rose);
-  transform: translateX(4px);
-  box-shadow: var(--shadow-sm);
+.contact-identity-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-pink);
 }
 
-.social-btn-row .btn-icon-label {
+.contact-id-header {
   display: flex;
   align-items: center;
+  gap: 1.25rem;
+}
+
+.contact-id-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid var(--primary-rose);
+  box-shadow: 0 4px 14px rgba(225, 29, 104, 0.16);
+  flex-shrink: 0;
+}
+
+.contact-id-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.contact-id-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-rose);
+  margin-bottom: 0.2rem;
+}
+
+.contact-id-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.contact-id-details {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
 }
 
-.social-btn-row svg {
-  width: 20px;
-  height: 20px;
+.contact-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+}
+
+.contact-detail-row svg {
+  width: 18px;
+  height: 18px;
+  color: var(--primary-rose);
+  flex-shrink: 0;
+}
+
+/* Instagram Channel Card */
+.contact-instagram-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 2.2rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-instagram-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #E1306C;
+}
+
+.contact-instagram-card .channel-icon-wrap {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 1.2rem;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(225, 48, 108, 0.1);
+  color: #E1306C;
+  transition: var(--transition-smooth);
+}
+
+.contact-instagram-card:hover .channel-icon-wrap {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.contact-instagram-card .channel-icon-wrap svg {
+  width: 34px;
+  height: 34px;
+}
+
+.contact-instagram-card .channel-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+}
+
+.contact-instagram-card .channel-handle {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-rose);
+  margin-bottom: 0.65rem;
+}
+
+.contact-instagram-card .channel-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto 1.4rem;
+}
+
+.contact-instagram-card .channel-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  color: #E1306C;
+  background: rgba(225, 48, 108, 0.08);
+  border: 1px solid rgba(225, 48, 108, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.contact-instagram-card:hover .channel-action-btn {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
+/* Contact Navigation Footer */
+.contact-nav-footer {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-white);
+  transition: var(--transition-smooth);
+}
+.contact-nav-back:hover {
+  color: var(--primary-deep);
+  background: var(--bg-blush);
+  border-color: var(--primary-pink);
+}
+
+.contact-nav-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary-rose), var(--primary-deep));
+  text-decoration: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+.contact-nav-next:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
 }
 
 /* ==========================================================================
@@ -1738,6 +1906,9 @@ body:not(.mode-presentation) .slide-section {
     height: 340px;
   }
   .profile-details-right {
+    grid-template-columns: 1fr;
+  }
+  .contact-social-grid {
     grid-template-columns: 1fr;
   }
 }

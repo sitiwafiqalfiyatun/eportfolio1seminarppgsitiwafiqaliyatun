@@ -28,7 +28,7 @@ Mengusung gaya visual **modern, profesional, akademis, elegan, dan personal**, p
 10. **Topik 6 — Pola Pikir Bertumbuh**: Transformasi *Fixed Mindset → Growth Mindset*, restrukturisasi respon guru terhadap tantangan belajar murid (LK 4.2) + Tombol Artefak PDF Google Drive.
 11. **Topik 7 — Pembelajaran Berdiferensiasi**: Konsep *Setiap Murid Berbeda* (kebutuhan, kesiapan, minat, cara belajar), pemetaan profil murid dan kelas (LK 1.D), diferensiasi konten & produk + Tombol Artefak PDF Google Drive.
 12. **Sintesis Perjalanan Belajar Semester I**: Alur 6 tahapan (*Awal → Memahami → Mengalami → Bertumbuh → Menerapkan → Menjadi*) dan refleksi sintesis inti perubahan paradigma pendidik berpusat pada manusia.
-13. **Kontak (Let's Connect)**: Informasi jejaring profesional dengan tautan aktif ke **LinkedIn**, **Instagram**, dan **YouTube**.
+13. **Kontak (Let's Connect)**: Desain identik dengan E-Portfolio 1 dengan **Kartu Ringkasan Identitas** (Avatar bulat resmi, Nama, PPG Calon Guru, Prodi PPKn, Kampus UMP, dan bidang keahlian) serta **Kartu Profil Instagram Resmi (@wfqalfy)** dilengkapi tombol navigasi footer (*Kembali ke Sintesis* dan *Lanjut ke Closing*).
 14. **Closing / Thank You**: Penutup reflektif elegan dengan kutipan komitmen pendidik dan potret penutup.
 
 ---
